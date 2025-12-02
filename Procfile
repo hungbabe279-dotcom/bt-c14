@@ -1,1 +1,1 @@
-web: cd ch13_ex1_email && java -jar target/email-list.jar
+web: java -jar target/email-list.jar
