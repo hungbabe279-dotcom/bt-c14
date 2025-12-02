@@ -4,7 +4,7 @@ COPY pom.xml .
 COPY src ./src
 RUN mvn clean package -DskipTests
 
-FROM openjdk:11-jre-slim
+FROM eclipse-temurin:11-jre-alpine
 WORKDIR /app
 COPY --from=builder /app/target/email-list.jar .
 ENV PORT=8080
