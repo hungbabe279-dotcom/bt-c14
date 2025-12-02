@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: email-list
-    runtime: java
-    buildCommand: mvn clean package
-    startCommand: java -jar target/email-list.jar
-    envVars:
-      - key: JAVA_TOOL_OPTIONS
-        value: -Dserver.port=$PORT
